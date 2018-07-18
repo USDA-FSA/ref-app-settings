@@ -1,0 +1,24 @@
+{
+  "name": "ref-app-settings",
+  "version": "0.0.0",
+  "description": "Prototype",
+  "main": "index.js",
+  "scripts": {
+    "start": "grunt default",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usda-fsa/ref-app-settings.git"
+  },
+  "author": "Francis C. Rupert",
+  "contributors": [
+    "Francis Rupert <France.Rupert@gmail.com> (https://github.com/francisrupert)",
+    "Casey Hill <bignamehere@gmail.com> (https://github.com/bignamehere)"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "fsa-style": "^2.1.5",
+    "jquery": "^3.3.1"
+  }
+}
