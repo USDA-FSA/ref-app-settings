@@ -1,0 +1,31 @@
+.smvc-form-field {
+
+  max-width: 53rem;
+
+  &__label {
+
+    display: block;
+
+    .smvc-form-field--error & {
+      font-weight: $font-bold;
+    }
+
+  }
+
+  &__input {
+    display: block;
+  }
+
+  &__msg {
+    display: block;
+    margin-bottom: $size-base;
+    color: $color-fsa-red;
+    font-weight: $font-normal;
+  }
+
+}
+
+.fsa-input,
+.fsa-select {
+  font-weight: $font-normal;
+}

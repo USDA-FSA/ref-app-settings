@@ -1,0 +1,32 @@
+a {
+  &:visited {
+    color: $color-fsa-link;
+  }
+}
+
+.smvc-section {
+
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+
+  &--000 {
+    background-color: $color-fsa-white;
+  }
+
+  &--100 {
+    background-color: $color-fsa-tertiary-100;
+  }
+
+  &--200 {
+    background-color: $color-fsa-tertiary-200;
+  }
+
+  &__bd {
+    max-width: ($site-max-width + 24px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $size-default;
+  }
+
+
+}

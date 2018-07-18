@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spring MVC - Home</title>
+  <link rel="stylesheet" href="css/spring-mvc.min.css" media="all">
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.js"></script>
+    <script src="js/vendor/selectivizr-min.js"></script>
+    <script src="js/vendor/rem-min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <a class="skipnav" href="#main-content">Skip to main content</a>
+  <div class="usa-disclaimer fsa-disclaimer">
+    <div class="fsa-disclaimer__bd">
+      <span class="usa-disclaimer-official">
+        <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="img/us_flag_small.png">
+        An official website of the United States Government
+      </span>
+      <span class="usa-disclaimer-stage fsa-disclaimer__stage fsa-disclaimer__stage--prototype">
+        <strong>PROTOTYPE</strong> Not ready for Production
+      </span>
+    </div>
+  </div>
+  <div class="smvc-header">
+    <div class="smvc-header__bd">
+      <div class="smvc-header__prop">
+        <div class="smvc-brand">
+          <img src="img/usda-logo--white.svg" alt="USDA Logo" class="smvc-brand__logo">
+          <span class="smvc-brand__label">
+            <span class="smvc-brand__usda">United States Department of Agriculture</span>
+            <span class="smvc-brand__agency">Farm Service Agency</span>
+          </span>
+        </div>
+      </div>
+      <a class="smvc-header__app-name" href="index.html">ExampleAppSpringMvc</a>
+    </div>
+  </div>
+  <main id="main-content">
+    <div class="smvc-section">
+      <div class="smvc-section__bd">
+        <div class="smvc-profile">
+          <span class="smvc-profile__name">Francis C. Rupert</span>,
+          <span class="smvc-profile__role">Engineer</span>
+          <a href="logout.html" class="smvc-profile__logout">Sign off</a>
+        </div>
+        <h1 class="fsa-m-t--m">Edit Employee</h1>
+      </div>
+    </div>
+    <div class="smvc-section smvc-section--000">
+      <div class="smvc-section__bd">
+        <form action="employees-add--success.html" method="post">
+          <fieldset>
+
+            <p class="smvc-form-field">
+              <label class="smvc-form-field__label" for="asdfasdf_first-name">First Name</label>
+              <span class="smvc-form-field__input"><input class="fsa-input" type="text" id="asdfasdf_first-name" value="Stringer"></span>
+            </p>
+
+            <p class="smvc-form-field">
+              <label class="smvc-form-field__label" for="asdfasdf_last-name">Last Name</label>
+              <span class="smvc-form-field__input"><input class="fsa-input" type="text" id="asdfasdf_last-name" value="Bell"></span>
+            </p>
+
+            <p class="smvc-form-field">
+              <label class="smvc-form-field__label" for="asdfasdf_job-title">Job Title</label>
+              <span class="smvc-form-field__input"><input class="fsa-input" type="text" id="asdfasdf_job-title" value="Lieutenant"></span>
+            </p>
+
+            <p class="smvc-form-field">
+              <label class="smvc-form-field__label">
+                Hire Date
+                <span class="smvc-form-field__input">
+                  <select class="fsa-select" id="asdfasdf_hire-date--month">
+                    <option value="--"></option>
+                    <option value="January" selected="">01</option>
+                    <option value="February">02</option>
+                    <option value="March">03</option>
+                    <option value="April">04</option>
+                    <option value="May">05</option>
+                    <option value="June">06</option>
+                    <option value="July">07</option>
+                    <option value="August">08</option>
+                    <option value="September">09</option>
+                    <option value="October">10</option>
+                    <option value="November">11</option>
+                    <option value="December">12</option>
+                  </select>
+                  <select class="fsa-select" id="asdfasdf_hire-date--day">
+                    <option value="--"></option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06" selected="">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  <select class="fsa-select" id="asdfasdf_hire-date--year">
+                    <option value="--"></option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998" selected="">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1981">1981</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1976">1976</option>
+                    <option value="1975">1975</option>
+                    <option value="1974">1974</option>
+                    <option value="1973">1973</option>
+                    <option value="1972">1972</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1969">1969</option>
+                    <option value="1968">1968</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1961">1961</option>
+                    <option value="1960">1960</option>
+                    <option value="1959">1959</option>
+                    <option value="1958">1958</option>
+                    <option value="1957">1957</option>
+                    <option value="1956">1956</option>
+                    <option value="1955">1955</option>
+                    <option value="1954">1954</option>
+                    <option value="1953">1953</option>
+                    <option value="1952">1952</option>
+                    <option value="1951">1951</option>
+                    <option value="1950">1950</option>
+                    <option value="1949">1949</option>
+                    <option value="1948">1948</option>
+                    <option value="1947">1947</option>
+                    <option value="1946">1946</option>
+                    <option value="1945">1945</option>
+                    <option value="1944">1944</option>
+                    <option value="1943">1943</option>
+                    <option value="1942">1942</option>
+                    <option value="1941">1941</option>
+                    <option value="1940">1940</option>
+                    <option value="1939">1939</option>
+                    <option value="1938">1938</option>
+                    <option value="1937">1937</option>
+                    <option value="1936">1936</option>
+                    <option value="1935">1935</option>
+                    <option value="1934">1934</option>
+                    <option value="1933">1933</option>
+                    <option value="1932">1932</option>
+                    <option value="1931">1931</option>
+                    <option value="1930">1930</option>
+                    <option value="1929">1929</option>
+                    <option value="1928">1928</option>
+                    <option value="1927">1927</option>
+                    <option value="1926">1926</option>
+                    <option value="1925">1925</option>
+                    <option value="1924">1924</option>
+                    <option value="1923">1923</option>
+                    <option value="1922">1922</option>
+                    <option value="1921">1921</option>
+                    <option value="1920">1920</option>
+                    <option value="1919">1919</option>
+                    <option value="1918">1918</option>
+                    <option value="1917">1917</option>
+                    <option value="1916">1916</option>
+                    <option value="1915">1915</option>
+                    <option value="1914">1914</option>
+                    <option value="1913">1913</option>
+                    <option value="1912">1912</option>
+                    <option value="1911">1911</option>
+                    <option value="1910">1910</option>
+                    <option value="1909">1909</option>
+                    <option value="1908">1908</option>
+                    <option value="1907">1907</option>
+                    <option value="1906">1906</option>
+                    <option value="1905">1905</option>
+                    <option value="1904">1904</option>
+                    <option value="1903">1903</option>
+                    <option value="1902">1902</option>
+                    <option value="1901">1901</option>
+                    <option value="1900">1900</option>
+                  </select>
+                </span>
+              </label>
+            </p>
+
+            <p>
+              <button class="fsa-btn fsa-btn--primary" type="submit" id="asdfasdf_submit">Save</button>
+            </p>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="smvc-section smvc-section--100">
+      <div class="smvc-section__bd">
+        <div class="usa-footer-secondary_section smvc-footer_secondary">
+          <div class="fsa-grid">
+            <div class="fsa-grid__1 fsa-grid__1/2@m">
+              <div class="usa-footer-logo">
+                <svg class="usa-footer-logo-img" width="52" height="78" role="img" aria-label="United States Department of Agriculture">
+                  <title>United States Department of Agriculture</title>
+                  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/usda-logo.svg" src="img/usda-logo.svg" width="140" height="96"></image>
+                </svg>
+
+                <h3 class="usa-footer-logo-heading">
+                  United States Department of Agriculture
+                  <span class="usa-footer-logo-heading_sub">Farm Service Agency</span>
+                </h3>
+              </div>
+            </div>
+            <div class="fsa-grid__1 fsa-grid__1/2@m">
+              <div class="usa-footer-contact-links">
+                <div class="usa-social-links">
+                  <a href="http://www.facebook.com/usda/" title="USDA on Facebook">
+                    <svg width="52" height="78" role="img" aria-label="Facebook">
+                      <title>Facebook</title>
+                      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/social-icons/svg/facebook25.svg" src="img/social-icons/png/facebook25.png" width="52" height="78"></image>
+                    </svg>
+                  </a>
+                  <a href="http://www.twitter.com/usdafsa" title="USDA on Twitter">
+                    <svg width="52" height="78" role="img" aria-label="Twitter">
+                      <title>Twitter</title>
+                      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/social-icons/svg/twitter16.svg" src="img/social-icons/png/twitter16.png" width="52" height="78"></image>
+                    </svg>
+                  </a>
+                  <a href="http://www.youtube.com/usda/" title="USDA on YouTube">
+                    <svg width="52" height="78" role="img" aria-label="YouTube">
+                      <title>YouTube</title>
+                      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/social-icons/svg/youtube15.svg" src="img/social-icons/png/youtube15.png" width="52" height="78"></image>
+                    </svg>
+                  </a>
+                  <a href="http://www.fsa.usda.gov/www.fsa.usda.gov/FSA/rss?area=newsroom&amp;subject=landing&amp;topic=rss" title="USDA RSS Feeds">
+                    <svg width="52" height="78" role="img" aria-label="RSS">
+                      <title>RSS</title>
+                      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/social-icons/svg/rss25.svg" src="img/social-icons/png/rss25.png" width="52" height="78"></image>
+                    </svg>
+                  </a>
+                </div>
+                <address>
+                  <h3 class="usa-footer-contact-heading">Contact Center</h3>
+                  <p>(800) CALL-GOVT</p>
+                  <a href="mailto:#">name@agency.gov</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="smvc-section smvc-section--200">
+      <div class="usa-footer smvc-section__bd">
+        <div class="usa-footer-primary-section smvc-footer_primary">
+          <nav class="usa-footer-nav">
+            <ul class="usa-unstyled-list smvc-footer_links">
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="http://www.fsa.usda.gov/index">FSA Home</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">USDA.gov</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Policies &amp; Links</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#"><abbr title="Freedom of Information Act">FOIA</abbr></a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Accessibility</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Privacy</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Non-discrimination Statement</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Information Quality</a>
+              </li>
+              <li class="usa-footer-primary-content">
+                <a class="usa-footer-primary-link smvc-footer_link" href="#">Plain Writing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

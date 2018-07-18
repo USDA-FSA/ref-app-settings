@@ -1,0 +1,67 @@
+.smvc-table {
+
+  margin-top: 0;
+
+  th,
+  td {
+
+    $small-left-space: 108px;
+
+    vertical-align: middle;
+    padding-left: $small-left-space;
+    position: relative;
+    margin-bottom: $size-small;
+
+    &:first-child {
+
+      padding-left: $small-left-space;
+
+      @include breakpoint(M) {
+        padding-left: 0;
+      }
+
+    }
+
+    @include breakpoint(M) {
+      padding-left: $size-default;
+    }
+
+    &:before {
+      position: absolute;;
+      left: 0;
+      top: 0;
+      margin-top: 0;
+      color: inherit;
+    }
+
+  }
+
+  &__options {
+
+    &:last-child {
+      margin-top: $size-default;
+      padding-left: 0;
+    }
+
+    @include breakpoint(ML) {
+      border: 0;
+      text-align: right;
+    }
+
+    &-item {
+
+      font-size: $font-size-4;
+
+      &--edit {}
+
+      &--destroy {}
+
+      & + & {
+        margin-left: $size-default;
+      }
+
+    }
+
+  }
+
+}

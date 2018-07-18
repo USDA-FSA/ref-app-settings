@@ -1,0 +1,101 @@
+.smvc-pagination {
+
+  margin: 1em 0 1.5em;
+  text-align: center;
+  font-size: $font-size-1;
+
+  @include breakpoint(M) {
+    font-size: $base-font-size;
+  }
+
+  &__list {
+    @include reset-ul();
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  &__item {
+
+    @include reset-li();
+    display: inline-block;
+
+    & + & {
+      margin-left: -3px
+    }
+
+  }
+
+  &__link {
+
+    display: block;
+    padding: $size-small $size-default;
+    border-radius: 2px;
+    line-height: 1;
+    color: inherit;
+    text-decoration: none;
+    font-weight: $font-bold;
+
+    &--previous,
+    &--next {
+      font-weight: $font-normal;
+    }
+
+    &--previous {
+      &:before {
+        content: '\276e';
+        @include breakpoint(MML) {
+          padding-right: $size-small
+        }
+      }
+    }
+
+    &--next {
+      &:after {
+        content: '\276f';
+        @include breakpoint(MML) {
+          padding-left: $size-small;
+        }
+      }
+    }
+
+    &--active {
+
+      background-color: $color-fsa-secondary-900;
+      color: $color-fsa-white;
+
+      &:active,
+      &:hover {
+        color: $color-fsa-white;
+      }
+
+      &:focus {
+        background-color: shade($color-fsa-secondary-900, 30%)
+      }
+
+    }
+
+    &--disabled {
+      color: $color-fsa-tertiary-200;
+      &:hover {
+        color: $color-fsa-tertiary-200;
+        cursor: text;
+      }
+    }
+
+    &:hover:not(.smvc-pagination__link--disabled):not(.smvc-pagination__link--active) {
+      background-color: $color-fsa-secondary-100;
+    }
+
+  }
+
+  &__label {
+
+    display: none;
+
+    @include breakpoint(MML) {
+      display: inline;
+    }
+
+  }
+
+}

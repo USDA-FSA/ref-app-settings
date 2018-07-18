@@ -1,24 +1,35 @@
 {
   "name": "ref-app-settings",
-  "version": "0.0.0",
   "description": "Prototype",
-  "main": "index.js",
-  "scripts": {
-    "start": "grunt default",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/usda-fsa/ref-app-settings.git"
-  },
+  "private": true,
   "author": "Francis C. Rupert",
-  "contributors": [
-    "Francis Rupert <France.Rupert@gmail.com> (https://github.com/francisrupert)",
-    "Casey Hill <bignamehere@gmail.com> (https://github.com/bignamehere)"
-  ],
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "cssnano": "^3.7.7",
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-build-control": "^0.7.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-prettify": "^0.4.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-scss-lint": "^0.5.0",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass": "^4.7.2",
+    "pixrem": "^3.0.2",
+    "postcss-quantity-queries": "^0.4.0",
+    "time-grunt": "^1.4.0"
+  },
   "dependencies": {
-    "fsa-style": "^2.1.5",
-    "jquery": "^3.3.1"
+    "fsa-style": "^2.1.5"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt test"
   }
 }
