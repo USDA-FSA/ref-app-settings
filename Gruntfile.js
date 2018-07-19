@@ -198,11 +198,11 @@ module.exports = function (grunt) {
     browserify: {
       main: {
         files: {
-          // 'dist/js/fsa-style-docs.js': [
-          //   'src/js/fsa-style-docs.js'
-          //   ,'path/to/another/file.js',
-          // ],
-          // 'dist/js/uswds.js': [
+          'dist/js/<%= pkg.name %>.js': [
+            'src/js/<%= pkg.name %>.js'
+            ,'src/js/test.js'
+          ]
+          // ,'dist/js/uswds.js': [
           //   'node_modules/uswds/src/js/start.js',
           //   // 'path/to/another/file.js',
           // ],
