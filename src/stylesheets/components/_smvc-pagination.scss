@@ -1,11 +1,19 @@
 .smvc-pagination {
 
-  margin: 1em 0 1.5em;
-  text-align: center;
-  font-size: $font-size-1;
+  * {
+    outline: 1px solid red;
+  }
 
-  @include breakpoint(M) {
-    font-size: $base-font-size;
+  & {
+
+    margin: 1em 0 1.5em;
+    text-align: center;
+    font-size: $font-size-1;
+
+    @include breakpoint(M) {
+      font-size: $base-font-size;
+    }
+
   }
 
   &__list {

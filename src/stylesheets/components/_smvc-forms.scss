@@ -1,6 +1,13 @@
 .smvc-form-field {
 
-  max-width: 53rem;
+  * {
+    outline: 1px solid red;
+  }
+
+  & {
+    max-width: 53rem;
+    outline: 1px solid red;
+  }
 
   &__label {
 
@@ -23,9 +30,4 @@
     font-weight: $font-normal;
   }
 
-}
-
-.fsa-input,
-.fsa-select {
-  font-weight: $font-normal;
 }

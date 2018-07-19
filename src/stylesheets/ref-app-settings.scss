@@ -1,15 +1,14 @@
 @import "fsa-style";
-@import 'components/footer'; // USWDS
-@import 'components/alerts'; // USWDS
-
-@import "components/fsa-disclaimer";
-@import "elements/smvc-utilities";
-@import "components/smvc-layout";
-@import "components/smvc-header";
-@import "components/smvc-profile";
-@import "components/smvc-brand";
 @import "components/smvc-table-mast";
 @import "components/smvc-table";
 @import "components/smvc-pagination";
-@import "components/smvc-footer";
 @import "components/smvc-forms";
+
+// SHAME
+.usa-alert {
+  outline: 4px solid red !important;
+}
+
+.usa-alert-text {
+  outline: 4px solid blue !important;
+}

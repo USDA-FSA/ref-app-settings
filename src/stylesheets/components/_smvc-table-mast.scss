@@ -1,7 +1,15 @@
 .smvc-table-mast {
 
-  position: relative;
-  margin-top: $size-medium;
+  outline: 1px solid red;
+
+  * {
+    outline: 1px solid red;
+  }
+
+  & {
+    position: relative;
+    margin-top: $size-medium;
+  }
 
   &__title {
 
@@ -10,7 +18,7 @@
     @include breakpoint(M) {
       display: inline-block;
     }
-    
+
   }
 
   &__amt {
