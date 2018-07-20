@@ -65,6 +65,18 @@ module.exports = function (grunt) {
 
     },
 
+    simple_include: {
+      options: {
+        html_comment: true,
+      },
+      default_options: {
+        src: [
+          'src/*.html'
+        ],
+        dest: '.ugly/'
+      },
+    },
+
     // Sass all the style things
     sass: {
       default: {
@@ -101,7 +113,7 @@ module.exports = function (grunt) {
         files: [
           'src/*.html',
         ],
-        tasks: ['prettify'] // 'simple_include'
+        tasks: ['simple_include','prettify'],
       },
       js: {
         files: [
@@ -132,7 +144,7 @@ module.exports = function (grunt) {
       },
       all: {
         expand: true,
-        cwd: 'src/',
+        cwd: './.ugly',
         ext: '.html',
         src: ['*.html'],
         dest: 'dist/'
@@ -219,6 +231,7 @@ module.exports = function (grunt) {
     'copy',
     'sass',
     'postcss',
+    'simple_include',
     'prettify',
     'browserify',
     'lint'
