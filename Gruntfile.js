@@ -112,6 +112,7 @@ module.exports = function (grunt) {
       html: {
         files: [
           'src/*.html',
+          'src/includes/*.html'
         ],
         tasks: ['simple_include','prettify'],
       },
