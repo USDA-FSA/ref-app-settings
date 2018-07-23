@@ -1,13 +1,7 @@
 @import "fsa-style";
-@import "components/smvc-table-mast";
-@import "components/smvc-pagination";
-@import "components/smvc-forms";
+@import "prototype/prototyping";
 
 // SHAME
-
-.HINT {
-  outline: 1px solid orangered;
-}
 
 .usa-alert {
   outline: 4px solid red !important;

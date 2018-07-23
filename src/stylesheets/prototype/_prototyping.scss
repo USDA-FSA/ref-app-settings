@@ -1,0 +1,68 @@
+// pcp.prototype ---------------------------------------------------------------
+
+$hint-color: rgba(255, 69, 0, .8);
+
+// scss-lint:disable SelectorFormat
+.OUTLINE {
+  outline: 1px solid $hint-color;
+}
+
+.HINT {
+
+  .HINT-SHOW & {
+
+    // scss-lint:disable all
+    box-shadow:
+      0 5000px 0 0 transparentize($hint-color, .7) inset,
+      0 5000px 0 0 transparentize($hint-color, .7) inset,
+      0 0px 0 7px transparentize($hint-color, .6)
+    ;
+    outline: 2px dashed $hint-color;
+    outline-offset: 5px;
+
+    &.pcp-content-tabs__label--active {
+      box-shadow: none;
+      outline: none;
+    }
+
+  }
+
+  .fsa-radio:checked + &,
+  .fsa-radio:disabled + &,
+  .fsa-checkbox:disabled + & {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &--HIDDEN-BLOCK {
+
+    @include font-size(2);
+    display: none;
+    padding: $size-small;
+
+    .HINT-SHOW & {
+      display: block;
+      outline-offset: 0;
+      box-shadow: none;
+      background-color: transparentize($hint-color, .7);
+    }
+
+  }
+
+  &:disabled {
+    outline: none;
+    box-shadow: none;
+  }
+
+}
+// scss-lint:disable SelectorFormat
+.TBD {
+  background-color: white;
+  border: 1px solid $color-fsa-tertiary-200;
+  padding: $size-default;
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  color: $color-fsa-tertiary-100;
+  text-shadow: -1px -1px 0 $color-fsa-tertiary-200;
+}
