@@ -4,6 +4,11 @@
 @import "components/smvc-forms";
 
 // SHAME
+
+.HINT {
+  outline: 1px solid orangered;
+}
+
 .usa-alert {
   outline: 4px solid red !important;
 }
