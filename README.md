@@ -1,3 +1,3 @@
 # About
 
-Prototyping "Settings" views using the FSA Design System
+Prototyping "Settings" views using the FSA Design System.
