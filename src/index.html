@@ -1,5 +1,5 @@
 {% include: 'includes/html.html' %}
-{% include: 'includes/head.html' @title:'Territories' %}
+{% include: 'includes/head.html' @title:'Settings: Employees' %}
 
 <body>
 
@@ -21,9 +21,9 @@
     <div class="fsa-section">
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
-        {% include: 'includes/content-tabs_territories.html' %}
-        <p><a class="fsa-btn fsa-btn--primary" href="territories-add.html" title="Add a Territory">Add</a></p>
-        {% include: 'includes/table_territories.html' %}
+        {% include: 'includes/content-tabs_employees.html' %}
+        <p><a class="fsa-btn fsa-btn--primary" href="employees-add.html" title="Add a Territory">Add</a></p>
+        {% include: 'includes/table_employees.html' %}
         {% include: 'includes/pagination_120-pages.html' %}
       </div>
     </div>
@@ -34,7 +34,7 @@
   </footer>
 
   <div>
-    {% include: 'includes/modal_territory-detail.html' %}
+    {% include: 'includes/modal_employee-detail.html' %}
   </div>
 
   <div class="fsa-growl-container">

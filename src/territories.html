@@ -1,5 +1,5 @@
 {% include: 'includes/html.html' %}
-{% include: 'includes/head.html' @title:'Employees' %}
+{% include: 'includes/head.html' @title:'Settings: Territories' %}
 
 <body>
 
@@ -21,9 +21,9 @@
     <div class="fsa-section">
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
-        {% include: 'includes/content-tabs_employees.html' %}
-        <p><a class="fsa-btn fsa-btn--primary" href="employees-add.html" title="Add an Employee">Add</a></p>
-        {% include: 'includes/table_employees.html' %}
+        {% include: 'includes/content-tabs_territories.html' %}
+        <p><a class="fsa-btn fsa-btn--primary" href="territories-add.html" title="Add Territory">Add</a></p>
+        {% include: 'includes/table_territories.html' %}
         {% include: 'includes/pagination_5-pages.html' %}
       </div>
     </div>
@@ -32,6 +32,19 @@
   <footer>
     {% include: 'includes/footer.html' %}
   </footer>
+
+  <div>
+    {% include: 'includes/modal_territory-detail.html' %}
+  </div>
+
+  <div class="fsa-growl-container">
+    <!-- Growl Notifications go in here -->
+    {% include: 'includes/growl_territory-edit-success.html' %}
+  </div>
+
+  <div class="fsa-growl-container fsa-growl-container--centered">
+    <!-- Modal-based, centered Growl Notifications go in here -->
+  </div>
 
   {% include: 'includes/scripts.html' %}
 
