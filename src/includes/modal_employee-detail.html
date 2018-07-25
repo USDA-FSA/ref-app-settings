@@ -2,8 +2,34 @@
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
       <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
-      <h1 class="fsa-modal__title">Employee Detail</h1>
-      <div class="TBD" style="padding-top: 100px; padding-bottom: 100px;">Edit Territory</div>
+      <form>
+        <h1 class="fsa-modal__title">Employee Detail</h1>
+        <fieldset>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="thingthing-name_887sh">First Name <span class="fsa-field__label-desc">Required</span></label>
+            <input data-behavior="validate-empty-field" class="fsa-input fsa-field__item" id="thingthing-name_887sh" name="thingthing-name_887sh" type="text" value="Stringer">
+            <span class="fsa-field__message" id="thingthing-name__error_887sh-message-01" role="alert">This field is required</span>
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="thingthing-last-name_887sh">Last Name <span class="fsa-field__label-desc">Required</span></label>
+            <input data-behavior="validate-empty-field" class="fsa-input fsa-field__item" id="thingthing-last-name_887sh" name="thingthing-last-name_887sh" type="text" value="Bell">
+            <span class="fsa-field__message" id="thingthing-last-name__error_887sh-message-01" role="alert">This field is required</span>
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="thingthing-job-title_887sh">Job Title <span class="fsa-field__label-desc">Required</span></label>
+            <input data-behavior="validate-empty-field" class="fsa-input fsa-field__item" id="thingthing-job-title_887sh" name="thingthing-job-title_887sh" type="text" value="Lieutenant">
+            <span class="fsa-field__message" id="thingthing-job-title__error_887sh-message-01" role="alert">This field is required</span>
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="thingthing-emp-id_887sh">ID</label>
+            <input class="fsa-input fsa-field__item" id="thingthing-emp-id_887sh" name="thingthing-emp-id_887sh" type="text" value="56190" readonly="readonly">
+          </div>
+          <div class="fsa-field fsa-m-t--m">
+            <button class="fsa-btn fsa-btn--primary HINT" type="button" data-behavior="close-modal whiteout-dismiss growl-show growl-dismiss-delay" aria-controls="UNIQUE-ID-8A386E512C033F57">Save</button>
+            <button class="fsa-btn fsa-btn--flat" type="button" data-behavior="close-modal">Cancel</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
   </div>
 </div>

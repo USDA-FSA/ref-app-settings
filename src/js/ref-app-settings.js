@@ -18,4 +18,6 @@ var GrowlComponentExtended  = require('./components/fsa-growl--extended.js');
 var SelectMultipleComponent = require('./components/fsa-select-multi');
 var SteppedControlComponent = require('./components/fsa-stepped-control');
 var SpinboxComponent        = require('./components/fsa-spinbox');
-var HintToggle              = require('./components/prototype-hint-toggle');
+
+var HintToggle              = require('./demo/hint-toggle');
+var FormField               = require('./demo/form-field');

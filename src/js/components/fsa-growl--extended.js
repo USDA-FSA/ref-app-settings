@@ -8,6 +8,6 @@ $('body').on('click', '[data-behavior~="growl-dismiss-delay"]', function(event) 
   setTimeout(function() {
     // this be lazy
     $target.find('.fsa-growl__close').click();
-  }, 4500);
+  }, 7000);
 
 })
