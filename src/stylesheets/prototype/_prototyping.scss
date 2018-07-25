@@ -27,6 +27,7 @@ $hint-color: rgba(255, 69, 0, .8);
 
   }
 
+  .fsa-content-tabs__label--active &,
   .fsa-radio:checked + &,
   .fsa-radio:disabled + &,
   .fsa-checkbox:disabled + & {
@@ -55,6 +56,19 @@ $hint-color: rgba(255, 69, 0, .8);
   }
 
 }
+
+.HINT-TOGGLE {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  background-color: tint($hint-color, 70%);
+  border: 2px solid $hint-color;
+  border-right: 0;
+  border-bottom: 0;
+  padding: $size-small $size-default;
+}
+
 // scss-lint:disable SelectorFormat
 .TBD {
   background-color: white;
