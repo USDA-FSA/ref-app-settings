@@ -66,7 +66,7 @@ $hint-color: rgba(255, 69, 0, .8);
   &__LABEL {
 
     background-color: tint($hint-color, 70%);
-    margin: 0;
+    margin: 0 !important;
     border: 2px solid $hint-color;
     padding: $size-small $size-default $size-small 40px;
     box-shadow:  0 0 $size-default rgba(0, 0, 0, .3);

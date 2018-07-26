@@ -23,3 +23,4 @@ var SpinboxComponent        = require('./components/fsa-spinbox');
 var GrowlComponentExtended  = require('./components/fsa-growl--extended.js');
 var HintToggle              = require('./demo/hint-toggle');
 var FormField               = require('./demo/form-field');
+var Modaling                = require('./demo/modaling');

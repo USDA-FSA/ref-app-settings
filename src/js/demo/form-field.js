@@ -13,3 +13,12 @@ $('body').on('blur', '[data-behavior~="validate-empty-field"]', function(event) 
   }
 
 })
+
+$('body').on('change', '[data-behavior~="track-change"]', function(event) {
+
+  var $self = $(this);
+  var $root = $self.closest('.fsa-modal');
+
+  $root.attr('data-changed', 'yup');
+
+})
