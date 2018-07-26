@@ -1,85 +1,11 @@
-// pcp.prototype ---------------------------------------------------------------
 
-$hint-color: rgba(255, 69, 0, .8);
-
-// scss-lint:disable SelectorFormat
-.OUTLINE {
-  outline: 1px solid $hint-color;
-}
-
-.HINT {
-
-  .HINT-SHOW & {
-
-    // scss-lint:disable all
-    box-shadow:
-      0 5000px 0 0 transparentize($hint-color, .7) inset,
-      0 5000px 0 0 transparentize($hint-color, .7) inset,
-      0 0px 0 7px transparentize($hint-color, .6)
-    ;
-    outline: 2px dashed $hint-color;
-    outline-offset: 5px;
-
-    &.pcp-content-tabs__label--active {
-      box-shadow: none;
-      outline: none;
-    }
-
-  }
-
-  .fsa-content-tabs__label--active &,
-  .fsa-radio:checked + &,
-  .fsa-radio:disabled + &,
-  .fsa-checkbox:disabled + & {
-    box-shadow: none;
-    outline: none;
-  }
-
-  &--HIDDEN-BLOCK {
-
-    @include font-size(2);
+[list] {
+  &::-webkit-calendar-picker-indicator {
     display: none;
-    padding: $size-small;
-
-    .HINT-SHOW & {
-      display: block;
-      outline-offset: 0;
-      box-shadow: none;
-      background-color: transparentize($hint-color, .7);
-    }
-
   }
-
-  &:disabled {
-    outline: none;
-    box-shadow: none;
+  &::-moz-calendar-picker-indicator {
+    display: none;
   }
-
-}
-
-.HINT-TOGGLE {
-
-  & {
-    position: fixed;
-    z-index: 9999;
-    bottom: $size-small;
-    right: $size-small;
-  }
-
-  &__LABEL {
-
-    background-color: tint($hint-color, 70%);
-    margin: 0;
-    border: 2px solid $hint-color;
-    padding: $size-small $size-default $size-small 40px;
-    box-shadow:  0 0 $size-default rgba(0, 0, 0, .3);
-
-    &:hover {
-      background-color: tint($hint-color, 50%);
-    }
-
-  }
-
 }
 
 // scss-lint:disable SelectorFormat
