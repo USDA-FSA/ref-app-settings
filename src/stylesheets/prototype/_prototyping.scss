@@ -58,15 +58,28 @@ $hint-color: rgba(255, 69, 0, .8);
 }
 
 .HINT-TOGGLE {
-  position: fixed;
-  z-index: 9999;
-  bottom: 0;
-  right: 0;
-  background-color: tint($hint-color, 70%);
-  border: 2px solid $hint-color;
-  border-right: 0;
-  border-bottom: 0;
-  padding: $size-small $size-default;
+
+  & {
+    position: fixed;
+    z-index: 9999;
+    bottom: $size-small;
+    right: $size-small;
+  }
+
+  &__LABEL {
+
+    background-color: tint($hint-color, 70%);
+    margin: 0;
+    border: 2px solid $hint-color;
+    padding: $size-small $size-default $size-small 40px;
+    box-shadow:  0 0 $size-default rgba(0, 0, 0, .3);
+
+    &:hover {
+      background-color: tint($hint-color, 50%);
+    }
+
+  }
+
 }
 
 // scss-lint:disable SelectorFormat
