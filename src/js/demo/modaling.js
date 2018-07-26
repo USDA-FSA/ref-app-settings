@@ -1,12 +1,20 @@
 var $ = require("jquery");
 
-
 $('body').on('click', '[data-behavior~="unsaved-changes"]', function(event) {
 
   var $self = $(this);
   var $component = $self.closest('.fsa-modal');
 
+  function hackyGrowlShow__centered(g) {
+    g.attr('aria-hidden', 'false');
+    $('#fsa-whiteout').attr('aria-hidden', 'false');
+  }
+
   function hackyModalClose() {
+
+    // TODO how to reference modal__close() from fsa-modal.js
+
+    // All of the below is a straight jQuery equivalent of fsa-modal.js modal__close()
 
     var _modal = $component;
 
@@ -27,10 +35,22 @@ $('body').on('click', '[data-behavior~="unsaved-changes"]', function(event) {
   }
 
   if ($component.is('[data-changed]')) {
-    alert('Save your changes dammit!')
+    hackyGrowlShow__centered($('#UNIQUE-ID-employee-unsaved'));
   }
   else {
     hackyModalClose()
   }
+
+})
+
+$('body').on('click', '[data-behavior~="brute-force-close-modals"]', function(event) {
+
+  var $self = $(this);
+  var $modals = $('.fsa-modal');
+
+  $modals
+    .attr('aria-hidden', 'true')
+    .removeAttr('data-changed')
+  ;
 
 })

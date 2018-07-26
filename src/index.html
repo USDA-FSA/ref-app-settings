@@ -39,11 +39,13 @@
 
   <div class="fsa-growl-container">
     <!-- Growl Notifications go in here -->
-    {% include: 'includes/growl_territory-edit-success.html' %}
+    {% include: 'includes/growl_employee-edit-success.html' %}
   </div>
 
+  <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
   <div class="fsa-growl-container fsa-growl-container--centered">
     <!-- Modal-based, centered Growl Notifications go in here -->
+    {% include: 'includes/growl_employee-unsaved.html' %}
   </div>
 
   {% include: 'includes/scripts.html' %}
