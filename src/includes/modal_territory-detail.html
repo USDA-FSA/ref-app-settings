@@ -7,7 +7,8 @@
         <fieldset>
           <div class="fsa-field">
             <label class="fsa-field__label" for="01930__id">ID</label>
-            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__id" name="01930__id" type="text" value="01930" aria-required="true" readonly="readonly">
+            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__id" name="01930__id" type="text" value="01930" aria-required="true" readonly="readonly" aria-describedby="01930__id--desc">
+            <span class="fsa-field__help" id="01930__id--desc">Automatically assigned</span>
           </div>
           <div class="fsa-field">
             <label class="fsa-field__label" for="01930__description">Description <span class="fsa-field__label-desc">Required</span></label>
@@ -135,11 +136,21 @@
           </div>
           <div class="fsa-field">
             <label class="fsa-field__label" for="01930__region">Region</label>
-            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__region" name="01930__region" type="text" value="7843" aria-required="true" readonly="readonly">
+            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__region" name="01930__region" type="text" value="7843" aria-required="true" readonly="readonly" aria-describedby="01930__region--desc">
+            <span class="fsa-field__help" id="01930__region--desc">Automatically assigned, based on County and State</span>
           </div>
-          <div class="fsa-field fsa-m-t--m">
-            <button class="fsa-btn fsa-btn--primary" data-saver disabled type="button" data-behavior="close-modal whiteout-dismiss growl-show growl-dismiss-delay" aria-controls="UNIQUE-ID-8A386E512C033F57">Save</button>
-            <button class="fsa-btn fsa-btn--flat HINT" type="button" data-behavior="close-modal">Cancel</button>
+          <div class="fsa-field fsa-m-t--l">
+            <div class="fsa-grid">
+              <div class="fsa-grid__auto">
+                <button class="fsa-btn fsa-btn--primary" data-saver disabled type="button" data-behavior="close-modal whiteout-dismiss growl-show growl-dismiss-delay" aria-controls="UNIQUE-ID-8A386E512C033F57">Save</button>
+                <button class="fsa-btn fsa-btn--flat HINT" type="button" data-behavior="close-modal">Cancel</button>
+              </div>
+              <div class="fsa-grid__auto">
+                <div class="fsa-text-align--right">
+                  <button class="fsa-btn fsa-btn--tertiary" type="button" onclick="alert('(growl dialog)')">Remove</button>
+                </div>
+              </div>
+            </div>
           </div>
         </fieldset>
       </form>
