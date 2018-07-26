@@ -22,7 +22,7 @@
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
         {% include: 'includes/content-tabs_employees.html' %}
-        <p><button class="fsa-btn fsa-btn--primary HINT" title="Add an Employee" type="button"  data-behavior="open-modal" aria-controls="UNIQUE-ID-emp-new" aria-expanded="false">Add</button></p>
+        {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add an Employee' @BEHAVIOR:'open-modal' @TARGET:'UNIQUE-ID-emp-new' @CLASS:'HINT' %}
         {% include: 'includes/table_employees.html' %}
         {% include: 'includes/pagination_120-pages.html' %}
       </div>

@@ -22,7 +22,7 @@
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
         {% include: 'includes/content-tabs_territories.html' %}
-        <p><a class="fsa-btn fsa-btn--primary" href="territories-add.html" title="Add Territory">Add</a></p>
+        {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add a Territory' @BEHAVIOR:' ' @TARGET:' ' @CLASS:' ' %}
         {% include: 'includes/table_territories.html' %}
         {% include: 'includes/pagination_5-pages.html' %}
       </div>
