@@ -17,8 +17,9 @@
           </div>
           <div class="fsa-field">
             <label class="fsa-field__label" for="thingthing-job-title_887sh">Job Title <span class="fsa-field__label-desc">Required</span></label>
-            <input data-behavior="validate-empty-field" class="fsa-input fsa-field__item" id="thingthing-job-title_887sh" name="thingthing-job-title_887sh" type="text" value="Lieutenant">
+            <input list="job-title_1234" data-behavior="validate-empty-field" class="fsa-input fsa-field__item" id="thingthing-job-title_887sh" name="thingthing-job-title_887sh" type="text" value="Lieutenant">
             <span class="fsa-field__message" id="thingthing-job-title__error_887sh-message-01" role="alert">This field is required</span>
+            {% include: 'data-list__job-title.html' @ID:'job-title_1234' %}
           </div>
           <div class="fsa-field">
             <label class="fsa-field__label" for="thingthing-emp-id_887sh">ID</label>
