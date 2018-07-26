@@ -1,9 +1,148 @@
 <div tabindex="0" id="UNIQUE-ID-2345SFGER99786" class="fsa-modal fsa-modal--top" role="dialog" aria-hidden="true">
   <div class="fsa-modal__dialog">
     <div class="fsa-modal__content">
-      <button class="fsa-modal__close" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
+      <button class="fsa-modal__close HINT" data-behavior="close-modal"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
       <h1 class="fsa-modal__title">Territory Details</h1>
-      <div class="TBD" style="padding-top: 100px; padding-bottom: 100px;">Edit Territory</div>
+      <form>
+        <fieldset>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="01930__id">ID</label>
+            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__id" name="01930__id" type="text" value="01930" aria-required="true" readonly="readonly">
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="01930__description">Description <span class="fsa-field__label-desc">Required</span></label>
+            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__description" name="01930__description" type="text" value="Central Coast" aria-required="true">
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="01930__state">State <span class="fsa-field__label-desc">Required</span></label>
+            <select data-behavior="validate-empty-field track-change" class="fsa-select fsa-field__item" id="01930__state" name="01930__state">
+              <option value="--">Select a State</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA" selected="selected">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="01930__county">County <span class="fsa-field__label-desc">Required</span></label>
+            <select data-behavior="validate-empty-field track-change" class="fsa-select fsa-field__item" id="01930__county" name="01930__county">
+              <option value="Alameda">Alameda</option>
+              <option value="Alpine">Alpine</option>
+              <option value="Amador">Amador</option>
+              <option value="Butte">Butte</option>
+              <option value="Calaveras">Calaveras</option>
+              <option value="Colusa">Colusa</option>
+              <option value="Contra Costa">Contra Costa</option>
+              <option value="Del Norte">Del Norte</option>
+              <option value="El Dorado">El Dorado</option>
+              <option value="Fresno">Fresno</option>
+              <option value="Glenn">Glenn</option>
+              <option value="Humboldt">Humboldt</option>
+              <option value="Imperial">Imperial</option>
+              <option value="Inyo">Inyo</option>
+              <option value="Kern">Kern</option>
+              <option value="Kings">Kings</option>
+              <option value="Lake">Lake</option>
+              <option value="Lassen">Lassen</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Madera">Madera</option>
+              <option value="Marin">Marin</option>
+              <option value="Mariposa">Mariposa</option>
+              <option value="Mendocino">Mendocino</option>
+              <option value="Merced">Merced</option>
+              <option value="Modoc">Modoc</option>
+              <option value="Mono">Mono</option>
+              <option value="Monterey">Monterey</option>
+              <option value="Napa">Napa</option>
+              <option value="Nevada">Nevada</option>
+              <option value="Orange">Orange</option>
+              <option value="Placer">Placer</option>
+              <option value="Plumas">Plumas</option>
+              <option value="Riverside">Riverside</option>
+              <option value="Sacramento">Sacramento</option>
+              <option value="San Benito">San Benito</option>
+              <option value="San Bernardino">San Bernardino</option>
+              <option value="San Diego">San Diego</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="San Joaquin">San Joaquin</option>
+              <option value="San Luis Obispo">San Luis Obispo</option>
+              <option value="San Mateo">San Mateo</option>
+              <option value="Santa Barbara" selected="selected">Santa Barbara</option>
+              <option value="Santa Clara">Santa Clara</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Shasta">Shasta</option>
+              <option value="Sierra">Sierra</option>
+              <option value="Siskiyou">Siskiyou</option>
+              <option value="Solano">Solano</option>
+              <option value="Sonoma">Sonoma</option>
+              <option value="Stanislaus">Stanislaus</option>
+              <option value="Sutter">Sutter</option>
+              <option value="Tehama">Tehama</option>
+              <option value="Trinity">Trinity</option>
+              <option value="Tulare">Tulare</option>
+              <option value="Tuolumne">Tuolumne</option>
+              <option value="Ventura">Ventura</option>
+              <option value="Yolo">Yolo</option>
+              <option value="Yuba">Yuba</option>
+            </select>
+          </div>
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="01930__region">Region</label>
+            <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="01930__region" name="01930__region" type="text" value="7843" aria-required="true" readonly="readonly">
+          </div>
+          <div class="fsa-field fsa-m-t--m">
+            <button class="fsa-btn fsa-btn--primary" data-saver disabled type="button" data-behavior="close-modal whiteout-dismiss growl-show growl-dismiss-delay" aria-controls="UNIQUE-ID-8A386E512C033F57">Save</button>
+            <button class="fsa-btn fsa-btn--flat HINT" type="button" data-behavior="close-modal">Cancel</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
   </div>
 </div>
