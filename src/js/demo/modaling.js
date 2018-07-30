@@ -84,7 +84,7 @@ $('body').on('click', '[data-behavior~="remove-employee"]', function(event) {
       backgroundColor  : '#f9e4e5'
     })
     .fadeTo('slow', '0', function() {
-      $(this).attr('hidden', 'true')
+      $(this).remove();
     })
   ;
 

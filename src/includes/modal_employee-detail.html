@@ -3,12 +3,28 @@
     <div class="fsa-modal__content">
       <button class="fsa-modal__close HINT" data-behavior="unsaved-changes" aria-controls="UNIQUE-ID-employee-unsaved"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
       <form>
-        <h1 class="fsa-modal__title">Employee Detail</h1>
+        <h1 class="fsa-modal__title">Edit Employee Detail</h1>
+        <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+          <ul>
+            <li><strong>Save</strong> button is disabled until each required field is valid.</li>
+            <li>
+              Place focus into and out of each field to <strong>view error</strong> state.
+              <ul>
+                <li>While in error state, provide a valid value and leave text field to <strong>view removal of error state</strong>. </li>
+                <li><strong>Validation</strong> occurs on <code>blur</code>.</li>
+                <li><strong>Enabling Save</strong> button occurs on <code>keyup</code></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <fieldset>
           <div class="fsa-field">
             <label class="fsa-field__label" for="thingthing-name_887sh">First Name <span class="fsa-field__label-desc">Required</span></label>
             <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="thingthing-name_887sh" name="thingthing-name_887sh" type="text" value="Stringer">
             <span class="fsa-field__message" id="thingthing-name__error_887sh-message-01" role="alert">This field is required</span>
+            <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+              After making a change try closing the modal without saving (via <span title="Close icon">&times;</span> or "Cancel") to <strong>demo "Unsaved changes" prompt</strong>.
+            </div>
           </div>
           <div class="fsa-field">
             <label class="fsa-field__label" for="thingthing-last-name_887sh">Last Name <span class="fsa-field__label-desc">Required</span></label>
@@ -19,6 +35,9 @@
             <label class="fsa-field__label" for="thingthing-job-title_887sh">Job Title <span class="fsa-field__label-desc">Required</span></label>
             <input list="job-title_1234" data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="thingthing-job-title_887sh" name="thingthing-job-title_887sh" type="text" value="Lieutenant">
             <span class="fsa-field__message" id="thingthing-job-title__error_887sh-message-01" role="alert">This field is required</span>
+            <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+              <strong>Job Title</strong> field makes use of <code>&lt;datalist&gt;</code> for an "auto-complete". Entry is not limited to those values; if it were, it'd be a <code>&lt;select&gt;</code>
+            </div>
             {% include: 'data-list__job-title.html' @ID:'job-title_1234' %}
           </div>
           <div class="fsa-field">
@@ -127,6 +146,22 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+            <p>Clicking <strong>Save</strong> will:</p>
+            <ol>
+              <li><strong>Close</strong> this Modal.</li>
+              <li>Display a <strong>Growl Notification</strong>.</li>
+            </ol>
+            <p>Clicking <strong>Cancel</strong> will:</p>
+            <ol>
+              <li>If unsaved changes: <strong>Growl prompt</strong>.</li>
+              <li>Else: Modal closed</li>
+            </ol>
+            <p>Clicking <strong>Remove</strong> will:</p>
+            <ol>
+              <li>Display an <strong>"Are you sure"</strong> Growl prompt.</li>
+            </ol>
           </div>
         </fieldset>
       </form>

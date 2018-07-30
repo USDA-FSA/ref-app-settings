@@ -21,6 +21,16 @@
     <div class="fsa-section">
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
+        <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+          <div class="fsa-text-size--4">
+            On this page you can:
+            <ol>
+              <li><strong>Add</strong> an Employee</li>
+              <li><strong>Edit</strong> an existing Employee.</li>
+              <li>Navigate to <strong>Territories</strong></li>
+            </ol>
+          </div>
+        </div>
         {% include: 'includes/content-tabs_employees.html' %}
         {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add an Employee' @BEHAVIOR:'open-modal' @TARGET:'UNIQUE-ID-emp-new' @CLASS:'HINT' %}
         {% include: 'includes/table_employees.html' %}

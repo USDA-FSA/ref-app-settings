@@ -21,6 +21,15 @@
     <div class="fsa-section">
       <div class="fsa-section__bd">
         <h1>ABC Settings</h1>
+        <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+          <div class="fsa-text-size--4">
+            On this page you can:
+            <ol>
+              <li><strong>Edit</strong> an existing Territory.</li>
+              <li>Navigate to <strong>Employees</strong></li>
+            </ol>
+          </div>
+        </div>
         {% include: 'includes/content-tabs_territories.html' %}
         {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add a Territory' @BEHAVIOR:' ' @TARGET:' ' @CLASS:' ' %}
         {% include: 'includes/table_territories.html' %}

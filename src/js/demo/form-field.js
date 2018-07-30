@@ -14,7 +14,7 @@ $('body').on('blur', '[data-behavior~="validate-empty-field"]', function(event) 
 
 })
 
-$('body').on('change', '[data-behavior~="track-change"]', function(event) {
+$('body').on('keyup change', '[data-behavior~="track-change"]', function(event) {
 
   var $self = $(this);
   var $root = $self.closest('.fsa-modal');
@@ -25,7 +25,7 @@ $('body').on('change', '[data-behavior~="track-change"]', function(event) {
 
 })
 
-$('body').on('blur', '[data-behavior~="all-filled"]', function(event) {
+$('body').on('keyup', '[data-behavior~="all-filled"]', function(event) {
 
   console.log('Checking inputs');
 
