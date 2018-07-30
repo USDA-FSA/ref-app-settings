@@ -54,3 +54,22 @@ $('body').on('click', '[data-behavior~="brute-force-close-modals"]', function(ev
   ;
 
 })
+
+$('body').on('click', '[data-behavior~="add-employee"]', function(event) {
+
+  var $self = $(this);
+  var $target = $('#' + $self.data('added-employee'))
+
+  $target
+    .css({
+      opacity          : '0',
+      transition       : 'background 1.66s ease-in-out',
+      backgroundColor  : '#fff1d2'
+    })
+    .removeAttr('hidden')
+    .fadeTo('slow', '1', function() {
+      $(this).css('background-color', 'transparent')
+    })
+  ;
+
+})
