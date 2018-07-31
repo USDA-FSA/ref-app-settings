@@ -67,7 +67,7 @@ $('body').on('click', '[data-behavior~="add-employee"]', function(event) {
       backgroundColor  : '#fff1d2'
     })
     .removeAttr('hidden')
-    .fadeTo('slow', '1', function() {
+    .fadeTo(1200, '1', function() {
       $(this).css('background-color', 'transparent')
     })
   ;
@@ -80,10 +80,8 @@ $('body').on('click', '[data-behavior~="remove-employee"]', function(event) {
   var $target = $('#' + $self.data('removed-employee'))
 
   $target
-    .css({
-      backgroundColor  : '#f9e4e5'
-    })
-    .fadeTo('slow', '0', function() {
+    .css('background-color','#f0bcbe')
+    .fadeTo(1000, '0', function() {
       $(this).remove();
     })
   ;
