@@ -4,7 +4,7 @@
       <button class="fsa-modal__close HINT" data-behavior="unsaved-changes" aria-controls="UNIQUE-ID-employee-unsaved"><img class="fsa-modal__close-icon" src="img/close.svg" alt="close"></button>
       <form>
         <h1 class="fsa-modal__title">Edit Employee Detail</h1>
-        <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+        <div class="HINT HINT--HIDDEN-BLOCK HINT--ASIDE" id="HINT-004">
           <ul>
             <li><strong>Save</strong> button is disabled until each required field is valid.</li>
             <li>
@@ -22,7 +22,7 @@
             <label class="fsa-field__label" for="thingthing-name_887sh">First Name <span class="fsa-field__label-desc">Required</span></label>
             <input data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="thingthing-name_887sh" name="thingthing-name_887sh" type="text" value="Stringer">
             <span class="fsa-field__message" id="thingthing-name__error_887sh-message-01" role="alert">This field is required</span>
-            <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+            <div class="HINT HINT--HIDDEN-BLOCK HINT--ASIDE" id="HINT-005">
               After making a change try closing the modal without saving (via <span title="Close icon">&times;</span> or "Cancel") to <strong>demo "Unsaved changes" prompt</strong>.
             </div>
           </div>
@@ -35,7 +35,7 @@
             <label class="fsa-field__label" for="thingthing-job-title_887sh">Job Title <span class="fsa-field__label-desc">Required</span></label>
             <input list="job-title_1234" data-behavior="validate-empty-field track-change" class="fsa-input fsa-field__item" id="thingthing-job-title_887sh" name="thingthing-job-title_887sh" type="text" value="Lieutenant">
             <span class="fsa-field__message" id="thingthing-job-title__error_887sh-message-01" role="alert">This field is required</span>
-            <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+            <div class="HINT HINT--HIDDEN-BLOCK HINT--ASIDE" id="HINT-006">
               <strong>Job Title</strong> field makes use of <code>&lt;datalist&gt;</code> for an "auto-complete". Entry is not limited to those values; if it were, it'd be a <code>&lt;select&gt;</code>
             </div>
             {% include: 'data-list__job-title.html' @ID:'job-title_1234' %}
@@ -147,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="HINT HINT--HIDDEN-BLOCK fsa-m-t--m fsa-m-b--l">
+          <div class="HINT HINT--HIDDEN-BLOCK HINT--ASIDE" id="HINT-007">
             <p>Clicking <strong>Save</strong> will:</p>
             <ol>
               <li><strong>Close</strong> this Modal.</li>
