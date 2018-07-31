@@ -136,7 +136,7 @@ module.exports = function (grunt) {
 
     // Clear files and folders
 		clean: {
-			dist: [ 'dist' ]
+			dist: [ 'dist', '.ugly' ]
 		},
 
     // Make our HTML files perfectly formatted and humanly scannable
