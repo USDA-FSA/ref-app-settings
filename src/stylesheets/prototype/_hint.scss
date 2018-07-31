@@ -47,6 +47,22 @@ $hint-color: rgba(255, 69, 0, .8);
 
   }
 
+  &--ON-THIS {
+
+    margin-top: $size-medium;
+    margin-bottom: $size-large;
+
+    @media (min-width: 104em) {
+      position: fixed;
+      right: $size-default;
+      top: $size-default;
+      margin-top: 0;
+      width: 200px;
+      background-color: #f9e8e2 !important;
+    }
+
+  }
+
   &:disabled {
     outline: none;
     box-shadow: none;

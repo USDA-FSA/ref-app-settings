@@ -1,5 +1,5 @@
 {% include: 'includes/html.html' %}
-{% include: 'includes/head.html' @title:'Settings: Employees' %}
+{% include: 'includes/head.html' @title:'Settings: Territories' %}
 
 <body>
 
@@ -25,16 +25,13 @@
           <div class="fsa-text-size--4">
             On this page you can:
             <ol>
-              <li><strong>Add</strong> an Employee</li>
-              <li><strong>Edit</strong> an existing Employee.</li>
               <li>Navigate between <strong>Tabs</strong>.</li>
             </ol>
           </div>
         </div>
-        {% include: 'includes/content-tabs_employees.html' %}
-        {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add an Employee' @BEHAVIOR:'open-modal' @TARGET:'UNIQUE-ID-emp-new' @CLASS:'HINT' @BOOLEAN:' ' %}
-        {% include: 'includes/table_employees.html' %}
-        {% include: 'includes/pagination_120-pages.html' %}
+        {% include: 'includes/content-tabs_programs.html' %}
+        {% include: 'includes/adder.html' @TEXT:'Add' @TITLE:'Add a Program' @BEHAVIOR:' ' @TARGET:' ' @CLASS:' ' @BOOLEAN:'disabled' %}
+        {% include: 'includes/table_programs.html' %}
       </div>
     </div>
   </main>
@@ -44,22 +41,16 @@
   </footer>
 
   <div>
-    {% include: 'includes/modal_employee-detail.html' @ID:'UNIQUE-ID-emp-detail' %}
-    {% include: 'includes/modal_employee-new.html' @ID:'UNIQUE-ID-emp-new' %}
+    <!-- Modals go in here -->
   </div>
 
   <div class="fsa-growl-container">
     <!-- Growl Notifications go in here -->
-    {% include: 'includes/growl_employee-edit-success.html' @ID:'UNIQUE-ID-8A386E512C033F57' %}
-    {% include: 'includes/growl_employee-add-success.html' @ID:'UNIQUE-ID__employee-added' %}
-    {% include: 'includes/growl_employee-remove-success.html' @ID:'UNIQUE-ID__employee-removed' %}
   </div>
 
   <div class="fsa-whiteout" id="fsa-whiteout" aria-hidden="true"></div>
   <div class="fsa-growl-container fsa-growl-container--centered">
     <!-- Modal-based, centered Growl Notifications go in here -->
-    {% include: 'includes/growl_employee-unsaved.html' @ID:'UNIQUE-ID-employee-unsaved' %}
-    {% include: 'includes/growl_employee-remove-prompt.html' @ID:'UNIQUE-ID__remove-employee' %}
   </div>
 
   {% include: 'includes/scripts.html' %}
