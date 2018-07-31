@@ -24,14 +24,6 @@ $hint-color: rgba(255, 69, 0, .8);
 
   }
 
-  .fsa-content-tabs__label--active &,
-  .fsa-radio:checked + &,
-  .fsa-radio:disabled + &,
-  .fsa-checkbox:disabled + & {
-    box-shadow: none;
-    outline: none;
-  }
-
   &--HIDDEN-BLOCK {
 
     @include font-size(2);
@@ -53,24 +45,38 @@ $hint-color: rgba(255, 69, 0, .8);
     margin-bottom: $size-large;
 
     @media (min-width: 104em) {
+      padding: $size-default $size-default 0;
       position: fixed;
-      right: $size-default;
+      left: $size-default;
       top: $size-default;
       margin-top: 0;
       width: 200px;
       background-color: #f9e8e2 !important;
+      outline-style: solid !important;
+      box-shadow:  0 0 $size-default rgba(0, 0, 0, .3) !important;
     }
 
   }
 
   &--ASIDE {
+
     margin-top: $size-medium;
     margin-bottom: $size-large;
+
     @media (min-width: 104em) {
       margin: 0;
       position: absolute;
       background-color: #f9e8e2 !important;
     }
+
+  }
+
+  .fsa-content-tabs__label--active &,
+  .fsa-radio:checked + &,
+  .fsa-radio:disabled + &,
+  .fsa-checkbox:disabled + & {
+    box-shadow: none;
+    outline: none;
   }
 
   &:disabled {
@@ -125,6 +131,11 @@ $hint-color: rgba(255, 69, 0, .8);
   #HINT-008 {
     right: 102%;
     width: 428px;
+  }
+
+  #HINT-009 {
+    position: static;
+    margin-top: $size-medium;
   }
 
 }
