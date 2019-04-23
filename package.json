@@ -1,6 +1,7 @@
 {
   "name": "ref-app-settings",
   "description": "Prototype",
+  "version": "1.1.0",
   "private": true,
   "author": "Francis C. Rupert",
   "devDependencies": {
@@ -28,7 +29,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "fsa-style": "^2.1.5"
+    "fsa-style": "^2.2.0"
   },
   "scripts": {
     "start": "grunt",
